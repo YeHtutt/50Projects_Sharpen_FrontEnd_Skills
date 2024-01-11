@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    /*die Drehung wird um die obere linke Ecke des containers durchgeführt - und nicht von der Mitte*/
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/*beim adden der .show-nav Klasse wird der Container um 20° Gegenuhrzeigersinn gedreht*/
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+.circle-container {
+    position: fixed;
+    /*top und left -100px von circle Größe 200px abgezogen, um Halbkreis zu zeigen*/
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+/*beim adden der .show-nav Klasse wird der .circle Klasse(der Kreis) um 70° Gegenuhrzeigersinn gedreht*/
+.container.show-nav .circle {
+    transform: rotate(-70deg); 
+}
+
+.circle button {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    /*eine Drehung des Buttons um 90 Grad im Uhrzeigersinn*/
+    transform-origin: top left;
+    /*die Drehung um die obere linke Ecke des Buttons durchgeführt*/
+}
+
+/*bei .container.show-nav Klasse hinzugefügt wird, werden die am Anfang gesetzten horizontal Verschiebungen der Navigation-Links aufgehoben*/
+.container.show-nav+nav li {
+    transform: translateX(0); /*Transformation,um das ausgewählte Element horizontal 0 Pixel verschieben (0px = keine Verschiebung)*/
+    transition-delay: 0.3s; /* Verzögerung von 0,3 Sekunden für den Übergang*/
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%); /*Am Anfang sind nav links horizontal -100% nach links verschoben*/
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li+li {
+    margin-left: 15px; /* nav ul 2tes li-Element 15px horizontal verschieben*/
+    transform: translateX(-150%); /*Am Anfang ist nav-link-2tes-Element horizontal -150% nach links verschoben*/
+}
+
+nav ul li+li+li {
+    margin-left: 30px; /* nav ul 3tes li-Element 30px horizontal verschieben*/
+    transform: translateX(-200%); /*Am Anfang ist nav-link-3tes-Element horizontal -200% nach links verschoben*/
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: #FF7979;
+    font-weight: bold;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content small {
+    color: #555;
+    font-style: italic;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.5;
+}
