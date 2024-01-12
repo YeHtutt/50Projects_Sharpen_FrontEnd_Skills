@@ -7,9 +7,9 @@ It is the collection of many small projects that sharpen front-end development s
 
 | #   | Project                                 | LiveDemo                                  |
 | --- | --------------------------------------- | --------------------------------------------------- |
-| 01  | Expanding Cards                         | [https://ye-htut-aung.de/50Projects_Sharpen_FrontEnd_Skills/expending-cards/](#)                                      |
-| 02  | Progress Steps                          | [https://ye-htut-aung.de/50Projects_Sharpen_FrontEnd_Skills/progress-steps/](#)                                      |
-| 03  | Rotating Navigation Animation           | [https://ye-htut-aung.de/50Projects_Sharpen_FrontEnd_Skills/rotating-navigation/](#)  
+| 01  | Expanding Cards                         | [Live Demo](https://ye-htut-aung.de/50Projects_Sharpen_FrontEnd_Skills/expending-cards/)                                      |
+| 02  | Progress Steps                          | [Live Demo](https://ye-htut-aung.de/50Projects_Sharpen_FrontEnd_Skills/progress-steps/)                                      |
+| 03  | Rotating Navigation Animation           | [Live Demo](https://ye-htut-aung.de/50Projects_Sharpen_FrontEnd_Skills/rotating-navigation/)  
 
 ## License
 
