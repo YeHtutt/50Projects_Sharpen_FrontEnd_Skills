@@ -13,6 +13,7 @@ It is the collection of 50 small projects that sharpen front-end development ski
 | 04  | Hidden Search Widget          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/hidden-search/)  
 | 05  | Blurry Loading          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/blurry-loading/)  
 | 06  | Scroll Animation          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/scroll-animation/) 
+| 07  | Split Landing Page          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/split-landing-page/) 
 
 ## License
 
