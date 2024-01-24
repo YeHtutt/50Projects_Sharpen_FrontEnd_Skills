@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+/*universal selector*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px; /*container width 380px*/
+    border-radius: 5px;
+}
+
+.container h1 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background-color: lightblue;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+/*um den Effekt eines Klicks zu sehen, wird das Button ein wenig auf 98% verkleinert*/
+.btn:active {
+    transform: scale(0.98); 
+}
+
+/*dunkle Hintergrundfarbe -> hellblau für Hover-Effekt*/
+.btn:hover {
+    background-color: rgba(173, 216, 230, 0.8); 
+}
+
+.text {
+    margin: 30px;
+}
+
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px; /*form-control width 300px*/
+}
+
+.form-control input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue ; /*
+    Ändert die Farbe der unteren Grenze des Eingabefelds auf "lightblue", wenn das Eingabefeld den Fokus hat oder gültig ist*/
+}
+
+/* label at the position top: 15px direct after the padding of form-control input and left: 0*/
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    /* transition: 0.3 ease-in-out; */
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /*Definiert eine Übergangsanimation von 0.3 Sekunden 
+    mit einem speziellen Cubic Bezier Timing für einen Bouncing-Effekt.*/
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue; /*Ändert die Textfarbe der span-Elemente auf "lightblue", wenn das zugehörige Eingabefeld den Fokus hat oder gültig ist*/
+    transform: translateY(-30px); /* Verschiebt die span-Elemente um 30 Pixel nach oben, um eine Art Aufwärtsanimation zu erzeugen, 
+    wenn das Eingabefeld den Fokus hat oder gültig ist*/
+}
