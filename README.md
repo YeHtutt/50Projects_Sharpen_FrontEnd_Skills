@@ -14,6 +14,7 @@ It is the collection of 50 small projects that sharpen front-end development ski
 | 05  | Blurry Loading          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/blurry-loading/)  
 | 06  | Scroll Animation          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/scroll-animation/) 
 | 07  | Split Landing Page          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/split-landing-page/) 
+| 08  | Form Wave Animation          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/form-wave-animation/) 
 
 ## License
 
