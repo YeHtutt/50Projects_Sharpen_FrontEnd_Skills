@@ -15,6 +15,8 @@ It is the collection of 50 small projects that sharpen front-end development ski
 | 06  | Scroll Animation          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/scroll-animation/) 
 | 07  | Split Landing Page          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/split-landing-page/) 
 | 08  | Form Wave Animation          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/form-wave-animation/) 
+| 09  | Sound Board          | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/sound-board/)
+| 10  | Dead Jokes         | [Live Demo](https://50-frontend-sharpenskills-projects.ye-htut-aung.de/dad-jokes/)
 
 ## License
 
